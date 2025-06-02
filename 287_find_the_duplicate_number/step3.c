@@ -6,7 +6,7 @@
 /*   By: kjikuhar <kjikuhar@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/02 15:04:50 by kjikuhar          #+#    #+#             */
-/*   Updated: 2025/06/02 15:09:21 by kjikuhar         ###   ########.fr       */
+/*   Updated: 2025/06/02 15:16:38 by kjikuhar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,24 +15,24 @@
 
 int findDuplicate(int* nums, int n)
 {
-	int toroize;
+	int tortoize;
 	int hare;
 
-	toroize = nums[0];
-	hare = nums[0];
+	tortoize = 0;
+	hare = 0;
 	while (1)
 	{
-		toroize = nums[toroize];
+		tortoize = nums[tortoize];
 		hare = nums[nums[hare]];
-		if (toroize == hare)
+		if (tortoize == hare)
 			break ;
 	}
-	toroize = nums[0];
+	tortoize = 0;
 	while (1)
 	{
-		toroize = nums[toroize];
+		tortoize = nums[tortoize];
 		hare = nums[hare];
-		if (toroize == hare)
+		if (tortoize == hare)
 			break ;
 	}
 	return (hare);
@@ -43,8 +43,8 @@ int findDuplicate(int* nums, int n)
 
 int	main(void)
 {
-	int nums[] = {1, 2, 4, 5, 3, 2};
-	int numsSize = 6;
+	int nums[] = {3, 1, 3, 4, 2};
+	int numsSize = 5;
 
 	printf("%d\n", findDuplicate(nums, numsSize));
 	return (0);

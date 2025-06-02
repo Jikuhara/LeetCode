@@ -42,9 +42,9 @@ git checkout -b "$DIR_NAME"
 mkdir -p "$DIR_NAME"
 
 # Create empty files under the directory
-touch "$DIR_NAME/step1.py"
-touch "$DIR_NAME/step2.py"
-touch "$DIR_NAME/step3.py"
+touch "$DIR_NAME/step1.c"
+touch "$DIR_NAME/step2.c"
+touch "$DIR_NAME/step3.c"
 touch "$DIR_NAME/memo.md"
 
 # Populate memo.md using a heredoc
@@ -57,15 +57,15 @@ $URL
 
 ### step1
 
-*   
+*
 
 ### step2
 
-*   
+*
 
 ### step3
 
-*   
+*
 EOF
 
 echo "Directory '$DIR_NAME' created with template files: step1.py, step2.py, step3.py, memo.md"

@@ -53,7 +53,6 @@ int findDuplicate(int* nums, int numsSize)
 }
 ```
 *
-update: 現在時刻 09:44
 うーんnumSizeは固定にしたい。。。
 Static変数にして、再帰のたびにnumsSizeを渡すのはどうだろう。
 

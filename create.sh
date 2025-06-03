@@ -57,15 +57,15 @@ $URL
 
 ### step1
 
-*   
+*
 
 ### step2
 
-*   
+*
 
 ### step3
 
-*   
+*
 EOF
 
 echo "Directory '$DIR_NAME' created with template files: step1.c, step2.c, step3.c, memo.md"

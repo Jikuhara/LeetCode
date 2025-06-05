@@ -39,6 +39,7 @@ N-2のMax＋N と N-1のMaxを比較して、Nを取るかどうか決める感�
 Step1に書いてみよう。
 
 ### step1
+
 ```c
 #include <stdio.h>
 #include <stdlib.h>
@@ -108,6 +109,7 @@ not_take_houseはわかりにくいなぁ。
 *
 
 ### step2
+
 ```c
 int rob(int* nums, int numsSize)
 {
@@ -129,9 +131,8 @@ int rob(int* nums, int numsSize)
 	return (current_sum[1] > current_sum[0]) ? current_sum[1] : current_sum[0];
 }
 ```
-短くはなったけど、あんま好まんなぁ。ちょっと見づらい感ある。
 
-*
+短くはなったけど、あんま好まんなぁ。ちょっと見づらい感ある。
 
 ### step3
 参考にしたコード

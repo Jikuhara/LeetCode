@@ -132,6 +132,5 @@ int main() {
 	return 0;
 }
 ```
-やっぱ、unordered_mapの使い方がわからない。
-
+やっぱ、unordered_mapの使い方がわからない...
 *
